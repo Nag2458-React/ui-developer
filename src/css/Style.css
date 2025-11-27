@@ -1,0 +1,94 @@
+.table {
+    width: 100% !important;
+}
+.table tr td, .table tr th{
+text-align: center;
+}
+.form-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 999;
+    
+}
+form{
+    background-color: #fff;
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+}
+form button{
+    margin:5px;
+    padding: 5px;
+    width: 80px;
+}
+nav {
+    position: relative;
+}
+.cl {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root, .ros {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-height {
+  flex: 1; /* pushes footer down */
+}
+
+.footer {
+  background: #1c3041;
+  padding: 10px 0;
+}
+
+.footer p {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.action2{
+    text-align: center;
+
+}
+td.action2 svg {
+    margin: 11px;
+}
+
+.colorbox{
+  width: 20px;
+  height:20px;
+  margin-right:10px;
+}
+
+.out{
+  width: 320px;
+}
+.cal-btn button{
+width:80px;
+height:80px;
+color: #000;
+border: 1px solid #ccc;
+}
+.cal-btn .op{
+  background-color: rgb(34, 25, 25);
+
+  color: #fff;
+}

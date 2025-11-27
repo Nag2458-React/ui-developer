@@ -1,0 +1,88 @@
+    
+ఇది నిజానికి JavaScript లో ఇలా మారుతుంది:
+
+js
+Copy code
+const element = React.createElement("h1", null, "Welcome to React!");
+🌟 React Components అంటే ఏమిటి?
+React లో UI ను చిన్న చిన్న reusable blocks గా తయారు చేస్తారు వాటినే Components అంటారు.
+
+Component లో ఏవి ఉంటాయి?
+UI ఎలా ఉండాలి? (HTML-like JSX)
+
+Logic ఎలా పని చేయాలి?
+
+Data ఎలా display చేయాలి?
+
+Components Types:
+1️⃣ Functional Component
+2️⃣ Class Component (ఇప్పుడు చాలా rare గా వాడతారు)
+
+✔️ Functional Component Example (Simple Telugu Example)
+jsx
+Copy code
+function Greeting() {
+  return <h2>హాయ్! నేను React Component ని 👋</h2>;
+}
+
+export default Greeting;
+ఈ component ను మరో ఫైల్ లో ఇలా ఉపయోగిస్తారు:
+jsx
+Copy code
+import Greeting from "./Greeting";
+
+function App() {
+  return (
+    <div>
+      <Greeting />
+    </div>
+  );
+}
+
+export default App;
+✔️ Component with Props Example
+Props అంటే component కు పంపే data.
+
+jsx
+Copy code
+function Welcome(props) {
+  return <h2>హలో {props.name} గారు!</h2>;
+}
+
+export default Welcome;
+Use చేయడం:
+jsx
+Copy code
+<Welcome name="Nagababu" />
+Output:
+
+Copy code
+హలో Nagababu గారు!
+✔️ Component with State Example
+State అంటే component లో మార్చే data.
+
+jsx
+Copy code
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <h1>Count: {count}</h1>
+      <button onClick={() => setCount(count + 1)}>పెంచు</button>
+    </div>
+  );
+}
+
+export default Counter;
+🎯 Summary (తెలుగులో)
+JSX → JavaScript లో HTML లాంటి కోడ్ వ్రాసే ప్రత్యేక syntax
+
+Component → React లో UI ని చిన్న చిన్న భాగాలుగా మల్లి వాడుకునేలా చేయడం
+
+Props → Parent నుండి Child కు పంపే data
+
+State → Component లో మారే విలువలు
+
