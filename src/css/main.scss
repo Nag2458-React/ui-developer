@@ -1,46 +1,42 @@
-$primary-color: #3b5e7b ;
+$primary-color: #3b5e7b;
 $edit-color: #055c69;
 $delete-color: #3b5e7b;
-
-
-
-
 
 .title {
   color: $primary-color;
   font-size: 24px;
   font-weight: bold;
 }
-.table tr th{
- background: var(--theme-color) !important;
+.table tr th {
+  background: var(--theme-color) !important;
 }
 table {
   th {
     padding: 12px 20px !important;
-    color:#fff !important;
+    color: #fff !important;
   }
 
   td {
-   padding: 0px 10px !important;
+    padding: 0px 10px !important;
     vertical-align: middle;
   }
 }
- button{
-    margin: 5px;
-    padding: 6px 12px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    &:hover{
-        transform: scale(1.08);
-      box-shadow: 0 4px 10px rgba(23, 162, 184, 0.4);
-    }
+button {
+  margin: 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  &:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 10px rgba(23, 162, 184, 0.4);
   }
+}
 .actions {
   display: flex;
-  button{
+  button {
     margin: 5px;
     padding: 6px 12px;
     border: none;
@@ -54,7 +50,7 @@ table {
 
     &:hover {
       background-color: darken($edit-color, 10%);
-      color:#fff;
+      color: #fff;
       transform: scale(1.08);
       box-shadow: 0 4px 10px rgba(23, 162, 184, 0.4);
     }
@@ -64,14 +60,12 @@ table {
 
     &:hover {
       background-color: darken($delete-color, 10%);
-      color:#fff;
+      color: #fff;
       transform: scale(1.08);
       box-shadow: 0 4px 10px rgba(220, 53, 69, 0.4);
     }
   }
 }
-
-
 
 .table-responsive {
   width: 100%;
@@ -93,40 +87,36 @@ table {
         top: 0;
         padding: 10px;
         font-weight: bold;
-        
       }
     }
-}
+  }
 }
 
 .form-overlay {
-    h3{
-        text-align: center;
-        font-size: 18px;
-        background-color: #3b5e7b !important;
-        padding:5px;
-        color:#fff;
+  h3 {
+    text-align: center;
+    font-size: 18px;
+    background-color: #3b5e7b !important;
+    padding: 5px;
+    color: #fff;
+  }
+  .form-group {
+    label {
+      font-weight: bold;
     }
-    .form-group{
-        label{
-            font-weight: bold;
-        }
-    }
+  }
 }
 
-
-.dropdown{
-  button{
+.dropdown {
+  button {
     padding: 10px !important;
     text-decoration: none;
-    &:hover{
+    &:hover {
       box-shadow: none !important;
       transform: none !important;
     }
   }
-
 }
-
 
 .navbar {
   background: var(--theme-color);
@@ -136,5 +126,13 @@ table {
     color: #fff;
     text-decoration: none;
     margin-right: 10px;
+  }
+}
+.reg form {
+  
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 30px !important;
+  .form-group{
+    margin-bottom: 10px;
   }
 }

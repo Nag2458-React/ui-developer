@@ -8,11 +8,13 @@ import Usestates from "./Pages/Usestates";
 import Cruds from "./Pages/Cruds";
 import Footer from "./Components/Footer";
 import Cruds2 from "./Pages/Cruds2";
-import { FaHome } from "react-icons/fa";
+// import { FaHome } from "react-icons/fa";
 import { useState } from "react";
 import Calculator from "./Pages/Calculator";
-import Keypad from "./Components/Keypad";
+// import Keypad from "./Components/Keypad";
 import ApiIntegration from "./Pages/ApiIntegration";
+import Register from "./Pages/Register";
+import Login from "./Pages/Login";
 
 function App() {
   const data = [
@@ -59,6 +61,11 @@ function App() {
             path="/calculator"
             element={<Calculator themeColor={themeColor} />}
           />
+          <Route
+            path="/register"
+            element={<Register themeColor={themeColor} />}
+          />
+          <Route path="/login" element={<Login themeColor={themeColor} />} />
           <Route
             path="/ApiIntegration"
             element={<ApiIntegration themeColor={themeColor} />}

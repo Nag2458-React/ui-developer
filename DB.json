@@ -1,4 +1,13 @@
 {
+  "users": [
+    {
+      "id": "efe0",
+      "firstName": "nagababu",
+      "lastName": "raavi",
+      "email": "nagu.elogin@gmail.com",
+      "password": "123456"
+    }
+  ],
   "products": [
     {
       "id": "2",

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Background from "../Background";
+// import Background from "../Background";
 
 function Navbar({ themeColor, setThemeColor }) {
   return (
@@ -39,6 +39,7 @@ function Navbar({ themeColor, setThemeColor }) {
           </ul>
         </div>
         <Link to="/calculator">Calculator</Link>
+        <Link to="/register">Register</Link>
         {/* Dropdown End */}
         {/* <ul className="ms-auto">
           <li>

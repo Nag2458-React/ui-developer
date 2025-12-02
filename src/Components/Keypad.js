@@ -9,7 +9,7 @@ const Keypad = ({ handleClick, handleCalc, handleClear }) => {
             handleClick("7");
           }}
           className="digit"
-        > 
+        >
           7
         </button>
         <button
@@ -18,7 +18,7 @@ const Keypad = ({ handleClick, handleCalc, handleClear }) => {
           }}
           className="digit"
         >
-          8
+          81
         </button>
         <button
           onClick={() => {
@@ -144,5 +144,3 @@ const Keypad = ({ handleClick, handleCalc, handleClear }) => {
 };
 
 export default Keypad;
-
-

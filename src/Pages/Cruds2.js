@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { getUsers, deleteUsers } from "../Components/api";
 import TableCrud2 from "../Components/TableCrud2";
-import FormCrud2 from "../Components/FormCrud2";
+// import FormCrud2 from "../Components/FormCrud2";
 
 const Cruds2 = ({ themeColor }) => {
   const [users, setUsers] = useState([]);
-  const [openForm2, setOpenForm2] = useState(false);
+  // const [openForm2, setOpenForm2] = useState(false);
   useEffect(() => {
     getUserData();
   }, []);

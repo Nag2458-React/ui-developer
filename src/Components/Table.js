@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "../css/Style.css";
+// import Style from "../css/Style.css";
 const Table = (props) => {
   return (
     <div
