@@ -7,14 +7,17 @@ import Props from "./Pages/Props";
 import Usestates from "./Pages/Usestates";
 import Cruds from "./Pages/Cruds";
 import Footer from "./Components/Footer";
+import News from "./Components/News";
 import Cruds2 from "./Pages/Cruds2";
 // import { FaHome } from "react-icons/fa";
 import { useState } from "react";
 import Calculator from "./Pages/Calculator";
 // import Keypad from "./Components/Keypad";
 import ApiIntegration from "./Pages/ApiIntegration";
+
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
+import ApiLoader from "./Pages/ApiLoader";
 
 function App() {
   const data = [
@@ -23,7 +26,7 @@ function App() {
       name: "Nagababu",
       role: "Developer",
       bg: "#2639a138",
-      cbg: "#2639a138",
+      cbg: "#a59d97",
       skills: ["React", "JavaScript", "HTML"],
     },
     {
@@ -31,7 +34,7 @@ function App() {
       name: "Ravi",
       role: "Designer",
       bg: "#3a550c29",
-      cbg: "#3a550c29",
+      cbg: "#a9a9a9",
       skills: ["Photoshop", "Figma", "UI/UX"],
     },
     {
@@ -43,13 +46,13 @@ function App() {
       skills: ["Angular", "CSS", "Bootstrap"],
     },
   ];
-  const [themeColor, setThemeColor] = useState("#3b5e7b");
+  const [themeColor, setThemeColor] = useState("#534c46");
   return (
     <>
       <Navbar themeColor={themeColor} setThemeColor={setThemeColor} />
       <div className="body-height">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home themeColor={themeColor} />} />
           <Route path="/props" element={<Props users={data} />} />
           <Route
             path="/usestates"
@@ -65,6 +68,12 @@ function App() {
             path="/register"
             element={<Register themeColor={themeColor} />}
           />
+          <Route
+            path="/ApiLoader"
+            element={<ApiLoader themeColor={themeColor} />}
+          />
+          <Route path="/news" element={<News themeColor={themeColor} />} />
+
           <Route path="/login" element={<Login themeColor={themeColor} />} />
           <Route
             path="/ApiIntegration"

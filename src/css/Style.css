@@ -1,49 +1,56 @@
-.table {
-    width: 100% !important;
-}
-.table tr td, .table tr th{
-text-align: center;
-}
-.form-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: left;
-    height: 100%;
-    background-color: rgba(0,0,0,0.6);
-    z-index: 999;
-    
-}
-form{
-    background-color: #fff;
-    width: 500px;
-    padding: 20px;
-    border-radius: 5px;
-}
-form button{
-    margin:5px;
-    padding: 5px;
-    width: 80px;
-}
-nav {
-    position: relative;
-}
-.cl {
-    position: absolute;
-    right: 25px;
-    top: 10px;
+body {
+  overflow-x: hidden;
 }
 
-html, body {
+.table {
+  width: 100% !important;
+}
+.table tr td,
+.table tr th {
+  text-align: center;
+}
+.form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+form {
+  background-color: #fff;
+  width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+}
+form button {
+  margin: 5px;
+  padding: 5px;
+  width: 80px;
+}
+nav {
+  position: relative;
+  border-bottom: 1px solid #fff;
+}
+.cl {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
+
+html,
+body {
   height: 100%;
   margin: 0;
 }
 
-#root, .ros {
+#root,
+.ros {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -64,31 +71,88 @@ html, body {
   text-align: center;
 }
 
-.action2{
-    text-align: center;
-
+.action2 {
+  text-align: center;
 }
 td.action2 svg {
-    margin: 11px;
+  margin: 11px;
 }
 
-.colorbox{
+.colorbox {
   width: 20px;
-  height:20px;
-  margin-right:10px;
+  height: 20px;
+  margin-right: 10px;
 }
 
-.out{
+.out {
   width: 320px;
 }
-.cal-btn button{
-width:80px;
-height:80px;
-color: #000;
-border: 1px solid #ccc;
+.cal-btn button {
+  width: 80px;
+  height: 80px;
+  color: #000;
+  border: 1px solid #ccc;
 }
-.cal-btn .op{
+.cal-btn .op {
   background-color: rgb(34, 25, 25);
 
   color: #fff;
+}
+label.form-check-label {
+  font-size: 14px;
+}
+
+.form-check {
+  margin: 2px;
+}
+
+.bubble-loader-wrapper {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubble-loader {
+  display: flex;
+  gap: 8px;
+}
+
+.bubble-loader span {
+  width: 30px;
+  height: 30px;
+  background: #198754;
+  border-radius: 50%;
+  animation: bubble 1.4s infinite ease-in-out both;
+}
+
+.bubble-loader span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.bubble-loader span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes bubble {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+.table-striped tr td {
+  padding: 5px !important;
+}
+
+button.delete {
+    border: 1px solid #ccc;
+    background: #d2d2d2;
+    font-weight: bold;
+    font-size: 13px !important;
 }

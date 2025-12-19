@@ -40,6 +40,9 @@ function Navbar({ themeColor, setThemeColor }) {
         </div>
         <Link to="/calculator">Calculator</Link>
         <Link to="/register">Register</Link>
+
+        <Link to="/ApiLoader">API-Loader</Link>
+
         {/* Dropdown End */}
         {/* <ul className="ms-auto">
           <li>
